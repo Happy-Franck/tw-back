@@ -1,0 +1,159 @@
+#recrutement .header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+#recrutement .header #space{
+    position: relative;
+    width: 100%;
+    height: 50vh;
+}
+#recrutement .header #space h1{
+    color: white;
+    font-size: 75px !important;
+}
+#recrutement .header .ico{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+#recrutement .header .header-h1::before{
+    content: '';
+    width: 50px;
+    height: 50px;
+    left: -50%;
+    z-index: 5;
+    position: absolute;
+    background-image: url('../img/ico/orange.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#recrutement .header .header-h1::after{
+    content: '';
+    width: 50px;
+    height: 50px;
+    right: -50%;
+    z-index: 5;
+    position: absolute;
+    background-image: url('../img/ico/ico.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#recrutement p{
+    padding: 0;
+    margin: 0;
+}
+#recrutement .avis{
+    box-shadow: 0px 2px 25px #03999e48;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+#recrutement .avis .recrute {
+    padding-left:30px;
+    flex:1 1 auto;
+}
+#recrutement .avis .avis-content {
+    flex:2 1 50%;
+}
+#recrutement .avis .avis-content .badge-custom{
+    background: #03999e;
+    color: white;
+    padding: 2px 8px 2px 8px;
+    border-radius: 2px;
+    font-size: 13px;
+    line-height: 19px;
+}
+#recrutement .avis .avis-postuler {
+    flex:1 1 20%;
+    padding: 0px 15px 0px 15px;
+}
+#recrutement .avis .avis-content-poste{
+    font-weight: bold;
+}
+#recrutement .avis .avis-image {
+    flex:2 1 30%;
+    padding:0;
+}
+#recrutement .avis .avis-image img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+@media screen and (max-width : 991px) and (min-width: 768px){
+    #recrutement .liste-avis{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    #recrutement .avis{
+        display: flex;
+        flex-direction: column;
+        flex: 2 0 100%;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    #recrutement .avis .avis-image {
+        width: 100%;
+        height: 200px;
+    }
+    #recrutement .avis .avis-content{
+        width: 100%;
+    }
+    #recrutement .avis .avis-postuler {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 10px 15px 10px 15px;
+    }
+}
+@media screen and (max-width: 768px){
+    #recrutement .header #space h1{
+        color: white;
+        font-size: 32px !important;
+    }
+    #recrutement .liste-avis{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    #recrutement .liste-avis{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    #recrutement .avis{
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    #recrutement .avis .avis-image {
+        width: 100%;
+        height: 200px;
+    }
+    #recrutement .avis .avis-content {
+        width: 100%;
+    }
+    #recrutement .avis .avis-postuler {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 10px 15px 10px 15px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #recrutement .header .header-h1::before{
+        display: none;
+    }
+    #recrutement .header .header-h1::after{
+        display: none;
+    }
+}

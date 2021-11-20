@@ -1,0 +1,157 @@
+#service .header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+#service .header #serv{
+    position: relative;
+    width: 100%;
+    height: 50vh;
+}
+#service .header #serv h1{
+    color: white;
+    font-size: 75px !important;
+}
+#service .service-list{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#service .service-list .service-item{
+    max-width: 100%;
+    margin-bottom: 25px;
+    box-shadow: 0px 2px 5px rgba(10,139,189,30%);
+}
+#service .service-list .service-item .service-img{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+#service .service-list .service-item .service-titre{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px;
+}
+#service .service-list .service-item .service-titre .btn-collapse{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    outline: none;
+    background: #03989E;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    position: relative;
+}
+#service .service-list .service-item .service-description{
+    border-top: 1px solid #03999e2f;
+}
+
+#service .techno:after{
+    content: "";
+    position: absolute;
+    z-index: -3;
+    top: 14px;
+    left: -14px;
+    opacity: 0.4;
+    width: 100%;
+    height: 100%;
+    background: #03989E;
+}
+#service .techno{
+    padding-top: 20px;
+    padding-bottom: 15px;
+    background: #03989E;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#service .techno h2{
+    color: white
+}
+#service .techno h2:after{
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 100px;
+    height: 25px;
+    top: 40px;
+    left: 50%;
+    transform: translate(-50%,50%);
+    border-bottom: 3px dashed #FFBD59;
+}
+#service .techno .techno-list{
+    margin-top: 35px;
+}
+#service .techno .techno-list .techno-item .techno-content{
+    position: relative;
+    margin-bottom: 25px;
+}
+#service .techno .techno-list .techno-item .techno-content .nomtech{
+    display: none;
+}
+#service .techno .techno-list .techno-item:hover .techno-content .nomtech{
+    display: block;
+}
+#service .techno .techno-list .techno-item .techno-content .nomtech{
+    width: 100px;
+    position: absolute;
+    color: white;
+    background: #FFBD59;
+    padding: 5px 10px 5px 10px;
+}
+#service .techno .techno-list .techno-item:nth-child(odd) .techno-content .nomtech{
+    top: 30%;
+    left: 110%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+}
+#service .techno .techno-list .techno-item:nth-child(odd) .techno-content .nomtech:before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 25px;
+    height: 25px;
+    left: -10px;
+    background: #FFBD59;
+    transform: rotate(45deg);
+    border-top-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+#service .techno .techno-list .techno-item:nth-child(even) .techno-content .nomtech{
+    top: 30%;
+    right: 120%;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+#service .techno .techno-list .techno-item:nth-child(even) .techno-content .nomtech:before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 25px;
+    height: 25px;
+    right: -12px;
+    background: #FFBD59;
+    transform: rotate(45deg);
+    border-top-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+@media screen and (max-width : 991px) and (min-width: 768px){
+}
+@media screen and (max-width: 768px){
+    #service .header #serv h1{
+        color: white;
+        font-size: 32px !important;
+    }
+}

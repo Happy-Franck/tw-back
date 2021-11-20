@@ -1,0 +1,33 @@
+#activiteshow .breadcumb-liste{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+#activiteshow .breadcumb-liste ul{
+    padding: 0;
+    margin: 0;
+}
+#activiteshow .breadcumb-liste ul li{
+    display: inline;
+    margin-right: 3px;
+}
+#activiteshow .breadcumb-liste ul li a{
+    color: #5c5c5c;
+}
+#activiteshow .breadcumb-liste ul li.active{
+    color: rgb(253, 179, 67) !important;
+}
+#activiteshow .breadcumb-liste ul li::after{
+    content:">";
+    position: relative;
+    top: 1px;
+    left: 4px;
+}
+#activiteshow .breadcumb-liste ul li:last-child:after{
+    content:"";
+}
+#activiteshow .badge-date{
+    background: rgb(253, 179, 67);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}

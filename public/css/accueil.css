@@ -1,0 +1,273 @@
+.img-indep{
+    position: absolute;
+    width: 100px;
+    bottom: 33%;
+    left: 100px;
+}
+.img-indep2{
+    width: 100px;
+    bottom: 33%;
+    position: relative;
+    left: 100px;
+}
+.grey-bg::before{
+    content: "";
+    display: block;
+    width: 400px;
+    height: 400px;
+    background: #2eff8911;
+    position: absolute;
+    border-radius: 100%;
+    z-index: -1;
+    right: -220px;
+    top: 150%;
+    left: -4rem;
+}
+.grey-bg-service::after{
+    content: "";
+    display: block;
+    width: 400px;
+    height: 400px;
+    background: #2cceff15;
+    position: absolute;
+    border-radius: 100%;
+    z-index: -1;
+    right: -220px;
+    top: 200%;
+    right: -4rem;
+}
+#accueil .particules .rond{
+    position: absolute;
+    border-radius: 50%;
+}
+#accueil .particules .rond.r-blue{
+    width: 15px;
+    height: 15px;
+    background:#63cff1;
+    top: 10%;
+    left: 10%;
+}
+#accueil .particules .rond.r-red{
+    width: 7px;
+    height: 7px;
+    background: white;
+    border: 2px solid #fe6170;
+    top: 15%;
+    left: 20%;
+}
+#accueil .particules .rond.r-vert{
+    width: 10px;
+    height: 10px;
+    background: white;
+    border: 3px solid #2eff8911;
+    top: 30%;
+    right: 15%;
+}
+#accueil .particules .rond.r-orange{
+    width: 10px;
+    height: 10px;
+    background: #2eff8911;
+    top: 20%;
+    right: 20%;
+}
+#accueil .particules .rond.r-vert{
+    width: 10px;
+    height: 10px;
+    background: white;
+    border: 3px solid #2eff8911;
+    bottom: 15%;
+    right: 15%;
+}
+#accueil header{
+    margin-top: 20%;
+}
+#accueil header .header-content{
+    padding-top: 50px;
+    line-height: 50px;
+}
+#accueil header .header-content h1.tanora-web{
+    font-size: 65px;
+    width: 200px;
+}
+#accueil header .header-content .input-search{
+    width: 60%;
+    height: 70px;
+    border-radius: 0px;
+    padding-left: 25px;
+    border: 0px;
+    outline: none;
+    box-shadow: 0px 20px 60px #798e8f23;
+}
+#accueil header .header-content .btn-search{
+    color:white;
+    background-color: rgb(253, 179, 67);
+    border-radius: 0px;
+    width: 70px;
+    height: 70px;
+    outline: none;
+}
+#accueil .garantie-section{
+    display: flex;
+    justify-content: center;
+}
+#accueil .garantie-section .img-security{
+    width: 80px;
+    position: absolute;
+    left: -41px;
+    top: 7px;
+}
+#accueil .garantie-section .box{
+    position: relative;
+    width: 60%;
+    padding: 25px 25px 25px 50px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 20px 60px #798e8f46;
+    margin: 15px 0px 50px 0px;
+}
+#accueil .partenaire-section .header-partenaire{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+}
+span.sp-blue{
+    color: #63cff1;
+}
+#accueil .partenaire-section .partenaire-carousel{
+    height: 220px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#accueil .partenaire-section .partenaire-carousel .carouse-owl-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#accueil .partenaire-section .partenaire-carousel .carouse-owl-item .partenaire-img{
+    display: flex;
+    justify-content: center;
+}
+#accueil .partenaire-section .partenaire-carousel .carouse-owl-item .partenaire-img .img-carousel{
+    width: 50%;
+    height: 150px;
+    object-fit: contain;
+}
+#accueil .services-section{
+    margin-top: 100px;
+}
+#accueil .services-section .icon{
+    font-size: 100px;
+    /* color: rgb(253, 179, 67); */
+    /* color: rgb(255, 153, 0); */
+    color: black;
+    /* text-shadow: 5px 5px 0px rgb(250, 199, 123); */
+    text-shadow: 5px 5px 0px rgb(255, 153, 0);
+}
+/* Small devices (landscape phones, 576px and up)*/
+@media (max-width: 576px) {
+    #accueil .garantie-section .box{
+        width: 90%;
+    }
+    .grey-bg::before{
+        content: "";
+        display: block;
+        width: 559px;
+        height: 559px;
+        background: #2eff8911;
+        position: absolute;
+        border-radius: 100%;
+        z-index: -1;
+        right: -220px;
+        top: 0%;
+        left: -40rem;
+    }
+    .grey-bg-service::after{
+        content: "";
+        display: block;
+        width: 559px;
+        height: 559px;
+        background: #2cceff15;
+        position: absolute;
+        border-radius: 100%;
+        z-index: -1;
+        right: -220px;
+        top: 225%;
+        right: -40rem;
+    }
+}
+/* Medium devices (tablets, 768px and up)*/
+@media (max-width: 768px){
+    #accueil .garantie-section .box{
+        width: 90%;
+        flex-wrap: wrap;
+    }
+    #accueil header{
+        margin-top: 20%;
+        height: 100%;
+    }
+    .grey-bg::before{
+        content: "";
+        display: block;
+        width: 559px;
+        height: 559px;
+        background: #2eff8911;
+        position: absolute;
+        border-radius: 100%;
+        z-index: -1;
+        right: -220px;
+        top: 300%;
+        left: -20rem;
+    }
+    .grey-bg-service::after{
+        content: "";
+        display: block;
+        width: 559px;
+        height: 559px;
+        background: #2cceff15;
+        position: absolute;
+        border-radius: 100%;
+        z-index: -1;
+        right: -220px;
+        top: 375%;
+        right: -20rem;
+    }
+}
+/* Large devices (desktops, 992px and up)*/
+@media (max-width: 992px) {
+
+}
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (max-width: 1200px) {
+    .grey-bg::before{
+        content: "";
+        display: block;
+        width: 559px;
+        height: 559px;
+        background: #2eff8911;
+        position: absolute;
+        border-radius: 100%;
+        z-index: -1;
+        right: -220px;
+        top: 100%;
+        left: -20rem;
+    }
+    .grey-bg-service::after{
+        content: "";
+        display: block;
+        width: 559px;
+        height: 559px;
+        background: #2cceff15;
+        position: absolute;
+        border-radius: 100%;
+        z-index: -1;
+        right: -220px;
+        top: 175%;
+        right: -20rem;
+    }
+}
+
+

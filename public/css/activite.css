@@ -1,0 +1,93 @@
+#activite .header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+#activite .header #act{
+    position: relative;
+    width: 100%;
+    height: 50vh;
+}
+#activite .header #act h1{
+    color: white;
+    font-size: 75px !important;
+}
+#activite .liste-activite .activite-item{
+    display: flex;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+    flex-direction: column;
+}
+#activite .liste-activite .activite-item:hover{
+    box-shadow: 0px 2px 25px #03999e48;
+    height: 250px;
+    overflow: hidden;
+}
+#activite .liste-activite .activite-item .activite-image{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+#activite .liste-activite .activite-item .activite-content{
+    transition: 0.5s;
+    position: absolute;
+    bottom: 20px;
+    left: 10%;
+    right: 10%;
+    width: 80%;
+    height: 60px;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 15px;
+}
+#activite .liste-activite .activite-item:hover .activite-content{
+    width: 100%;
+    height: 250px;
+    left: 0;
+    bottom: 0;
+    border-radius: 0px;
+}
+#activite .liste-activite .activite-item .activite-action{
+    display: none;
+}
+#activite .liste-activite .activite-item:hover .activite-action{
+    z-index: 7;
+    display: block;
+    position: relative;
+    left: 30%;
+    right: 30%;
+    top: -30%;
+}
+@media (max-width: 1199px) and (min-width: 992px){
+    #activite .liste-activite .activite-item{
+        display: flex;
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+        position: relative;
+        flex-direction: column;
+    }
+    #activite .liste-activite .activite-item:hover{
+        height: 200px;
+        overflow: hidden;
+    }
+    #activite .liste-activite .activite-item:hover .activite-content{
+        width: 100%;
+        height: 200px;
+        left: 0;
+        top: 0;
+        border-radius: 0px;
+    }
+    #activite .liste-activite .activite-item:hover .activite-action{
+        z-index: 7;
+        display: block;
+        position: relative;
+        left: 30%;
+        right: 30%;
+        top: -40%;
+    }
+}

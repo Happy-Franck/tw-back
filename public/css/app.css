@@ -1,0 +1,177 @@
+@import "./accueil.css";
+@import "./partenaire.css";
+@import "./activite.css";
+@import "./activiteshow.css";
+@import "./contact.css";
+@import "./recrutement.css";
+@import "./service.css";
+@import "./activite.css";
+@import "./recrutementshow.css";
+@import "./owl.carousel.min.css";
+@import "./owl.theme.default.css";
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+}
+/* navbar */
+.nav-custom{
+    padding-left: 9%;
+    padding-right: 9%;
+    background: white;
+    z-index: 10;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    font-size: 20px;
+    font-weight: bold;
+}
+.nav-custom2{
+    padding-left: 9%;
+    padding-right: 9%;
+    background: transparent;
+    z-index: 10;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    font-size: 20px;
+    font-weight: bold;
+}
+.nav-custom.scrolled {
+    background-color: #03999e !important;
+    color: white !important;
+    transition: all ease-in-out .3s;
+}
+.nav-custom2.scrolled {
+    background-color: #03999e !important;
+    color: white !important;
+    transition: all ease-in-out .3s;
+}
+.nav-custom .nav-item:hover .nav-link{
+    color: rgb(253, 179, 67);
+    transition: all ease-in-out .2s;
+}
+.nav-custom .nav-item:hover{
+    height: 100%;
+}
+.nav-custom .nav-item.dropdown-custom .dropdown-custom-menu{
+    display: none;
+    z-index: 10;
+}
+.nav-custom .dr-custom{
+    width: 250px;
+    background: #03999e;
+    margin-top: 14px;
+}
+.nav-custom a.dropdown-item-custom{
+    color: white;
+    background: #03999e;
+}
+.nav-custom a.dropdown-item-custom:hover{
+    color: rgb(253, 179, 67);
+}
+/* navbar end */
+
+/* content */
+.btn-custom{
+    background-color: rgb(253, 179, 67);
+    color: white;
+    height: 50px;
+    padding: 0.75rem 1.5rem 0.75rem;
+    border-radius: 2px;
+    transition: all ease-in-out 0.3s;
+    color: #fff;
+    letter-spacing: 0.5px;
+    outline: none !important;
+    box-shadow: none !important;
+}
+.btn-custom-contact{
+    border:1px solid rgb(253, 179, 67);
+    background: white;
+    padding: 15px 25px;
+    margin-right: 10px;
+}
+.btn-custom-contact a{
+    color: black;
+    text-decoration: none;
+}
+.btn-custom-contact i{
+    color: #03999e;
+}
+.btn-custom:hover{
+    border-radius: 30px;
+}
+/*content-end*/
+
+/* footer */
+footer{
+    margin-top: auto;
+    box-shadow: 0px 2px 11px rgba(3,152,158,50%);
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+footer .footer-list{
+    display: flex;
+}
+footer .footer-list .box{
+    flex: 1 1 25%;
+}
+footer .footer-list .box li{
+    list-style-type: none;
+    margin-bottom: 7px;
+    display: flex;
+}
+footer .footer-list .box li span{
+    width: 30px;
+    padding-top: 3px;
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+}
+footer .footer-list .box li a{
+    text-decoration: none;
+    color: #171717;
+}
+footer .footer-end{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+footer .footer-end img{
+    width: 75px;
+}
+/* --fin footer -- */
+
+/*responsive*/
+/* Small devices (landscape phones, 576px and up)*/
+@media (max-width: 576px) {
+    footer .footer-list .box{
+        width: 100%;
+    }
+
+}
+/* Medium devices (tablets, 768px and up)*/
+@media (max-width: 768px){
+    footer .footer-list{
+        flex-wrap: wrap;
+    }
+    footer .footer-list .box{
+        flex: 1 0 50%;
+    }
+}
+/* Large devices (desktops, 992px and up)*/
+@media (max-width: 992px) {
+    .nav-custom2{
+        background: #03999e;
+    }
+}
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (max-width: 1200px) {
+
+}
